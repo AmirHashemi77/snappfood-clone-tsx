@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'iranSans';
+    font-weight: normal;
+    src: url(../public/Font/IRANSansMobile.ttf);
+
+}
+@font-face {
+    font-family: 'iranSans';
+    font-weight: bold;
+    src: url(../public/Font/IRANSansMobile_Bold.ttf);
+
+}
+@font-face {
+    font-family: 'snapfont';
+    font-weight: normal;
+    src: url(../public/Font/SnappWeb2.0-Regular.woff);
+
+}
+@font-face {
+    font-family: 'snapfont';
+    font-weight: bold;
+    src: url(../public/Font/SnappWeb2.0-Bold.woff);
+
+}
+@font-face {
+    font-family: 'numberFont';
+    font-weight: normal;
+    src: url(../public/Font/IRANSansXFaNum-Bold.ttf);
+
+}
+
+
+*{
+    box-sizing: border-box;
+    color:#333;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type:none ;
+    font-family: 'iranSans';
+    direction: rtl;
+}
