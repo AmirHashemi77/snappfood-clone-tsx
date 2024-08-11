@@ -1,0 +1,56 @@
+@use '/src/variable.scss' as g;
+
+.container{
+    width: 100%;
+    background-color: #F9FAFB;
+
+
+
+        .breadCrumbWrapper{
+          
+            padding: 20px;
+            
+        }
+        .noItem{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 20rem;
+            font-size: 1rem;
+            color: g.$pinkColor;
+            font-weight: bold;
+            text-align: center;
+    
+        }
+        .main{
+            @include g.main;
+            padding: 30px 20px;
+
+                .flexContainer{
+                    @include g.flexCol;
+                    gap: 20px;
+                    position: relative;
+                    @media screen and (min-width:g.$lg) {
+                        flex-direction: row;
+                        align-items: flex-start;
+                        
+
+
+                    }
+
+                    .logoAndFoodList{
+                        @include g.flexCol;
+                        gap: 20px;
+                        width: 100%;
+                    @media screen and (min-width:g.$md) {
+                        flex-direction: row;
+                        align-items: flex-start;
+
+
+                    }
+                    }
+                }
+        }
+}
+
