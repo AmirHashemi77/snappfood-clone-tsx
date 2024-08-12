@@ -1,0 +1,61 @@
+@use '/src/variable.scss' as g;
+
+
+.buttonsSm{
+    @include g.flexRow;
+    margin: 10px;
+    
+
+    @media screen and (min-width: g.$lg) {
+        display: none;
+      }
+
+      .searchBtn , .ordersBtn , .userBtn{
+        border: 0;
+        background-color:transparent;
+        margin: 0 15px;
+        cursor: pointer;
+
+    }
+
+
+}
+
+
+
+
+.buttonsLg{
+    display: none;
+    @media screen and (min-width: g.$lg) {
+        @include g.flexRow;
+        // position: relative;
+        
+       
+
+
+        .userBtn{
+            border: 0;
+            background-color:transparent;
+            margin: 0 30px;
+            cursor: pointer;
+        }
+
+
+        .ordersBtn{
+            @include g.flexRow;
+            border: 0;
+            background-color:transparent;
+            margin: 0 15px;
+            cursor: pointer;
+            font-size: .9rem;
+            font-weight: bold;
+            color: #3A3D42;
+
+
+            span{
+                margin: 0 10px;
+            }
+        }
+
+      }
+}

@@ -1,0 +1,17 @@
+@use '/src/variable.scss' as g;
+.categoryItem{
+   @include g.flexCol;
+  
+
+
+    img{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-top: .4rem 0;
+        
+    }
+    p{
+        font-size: .75rem;
+        margin: .6rem;
+    }
+}

@@ -1,0 +1,17 @@
+@use '/src/variable.scss' as g;
+.categoryList{
+    @include g.flexRow;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding: 10px;
+
+    @media screen and (min-width: g.$lg) {
+        padding: 10px 35px;
+      }
+    
+    
+    
+}

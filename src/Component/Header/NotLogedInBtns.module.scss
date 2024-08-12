@@ -1,0 +1,59 @@
+@use '/src/variable.scss' as g;
+
+
+.buttonsSm{
+    @include g.flexRow;
+    margin: 10px;
+
+    @media screen and (min-width: g.$lg) {
+        display: none;
+      }
+
+    button{
+        border: 0;
+        background-color:transparent;
+        margin: 0 15px;
+        cursor: pointer;
+
+    }
+}
+
+
+
+
+
+
+.buttonsLg{
+display: none;
+@media screen and (min-width: g.$lg) {
+    @include g.flexRow;
+   
+  }
+
+
+.restrantSignInBtn{
+    @include g.flexRow;
+    background-color: transparent;
+    border: 0;
+    margin: 0 15px;
+    cursor: pointer;
+
+
+    p{
+        font-size: .9rem;
+        margin: 0 4px;
+    }
+
+}
+.userSignInBtn{
+    background-color: g.$pinkColor;
+    color: #fff;
+    font-size: .9rem;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+}
