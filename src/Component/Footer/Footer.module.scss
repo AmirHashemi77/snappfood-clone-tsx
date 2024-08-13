@@ -1,0 +1,87 @@
+@use '/src/variable.scss' as g;
+
+
+
+footer{
+    @include g.flexRow;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #F9FAFB;
+    padding: 30px 40px ;
+    flex-wrap: wrap;
+
+    .logoAndSocial{
+        @include g.flexRow;
+        align-items: flex-start;
+
+        .left{
+            @include g.flexCol;
+            align-items: flex-start;
+            margin: 0 20px;
+
+            .description{
+                @include g.flexCol;
+                align-items: flex-start;
+                margin: 0 10px;
+
+                    .title{
+                    font-family: 'snapfont';
+                    font-size: 1rem;
+                    color: g.$pinkColor;
+    
+                    }      
+                    .subtitle{
+                        color: #333;
+                        font-size: .75rem
+                    }
+
+
+            }
+            .socialMedia{
+                @include g.flexRow;
+                justify-content: flex-start;
+                margin: 20px 0;
+                flex-wrap: wrap;
+
+                .socialItem{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid rgb(225, 225, 225);
+                    background-color: rgb(255, 254, 254);
+                    border-radius: 100%;
+                    box-shadow: 0px 2px 4px 0px rgba(163,163,163,0.65);
+                    padding: 10px;
+                    margin: 10px;
+                    cursor: pointer;
+                    
+                }
+
+
+            }
+        }
+    }
+
+
+    .links{
+        @include g.flexCol;
+        align-items: flex-start;
+
+
+        .linksItem{
+            color: #222;
+            margin: 10px 0;
+            font-size: .75rem
+        }
+    }
+
+    .license{
+        @include g.flexRow;
+        .enamad{
+            margin: 0 10px;
+            width: 5.5rem;
+            height: 5.5rem;
+        }
+
+    }
+}
