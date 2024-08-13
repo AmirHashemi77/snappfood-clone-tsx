@@ -1,0 +1,133 @@
+@use '/src/variable.scss' as g;
+
+
+   .container{
+        padding: 20px;
+        margin: 10rem 0;
+        background-color: #EAEDF0;
+        border-radius: 10px;
+        position: relative;
+
+        
+        @media screen and (min-width:g.$lg) {
+            border-radius: 0 0 170px 0;
+
+            
+        }
+        
+        
+
+    .banner{
+        @include g.flexRow;
+        max-width: g.$max-5xl;
+        margin: 0 auto;
+        padding: 20px 0;
+      
+
+        .description{
+        @include g.flexCol;
+            align-items: flex-start;
+
+
+            h4{
+                font-family: 'snapfont';
+                color: #333;
+                font-size: 2rem;
+                font-weight: bold;
+                margin: 30px 0;
+                
+            }
+            p:first-of-type{
+                font-family: 'snapfont';
+                color: #333;
+                font-size: .8rem;
+                line-height: 1.6rem;
+                
+                margin: 20px 0;
+
+
+
+                @media screen and (min-width:g.$lg) {
+                    max-width: g.$max-md;
+        
+                    
+                }
+            }
+            p:nth-of-type(2){
+                font-family: 'snapfont';
+                color: #222;
+                font-size: .7rem;
+                margin: 20px 0 10px 0
+            }
+
+            .inputWrapper{
+                @include g.flexRow;
+                background-color: #fff;
+                padding: 8px 7px;
+                margin: 20px 0;
+                border-radius: 5px;
+                width: 20rem;
+
+                input{
+                    height: 100%;
+                    background-color: #fff;
+                    border: none;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                button{
+                    padding: 7px;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: .9rem;
+                    background-color: g.$pinkColor;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+            }
+
+
+            .buttons{
+                @include g.flexRow;
+                justify-content: flex-start;
+                
+                
+                flex-wrap: wrap;
+                margin: 30px 0;
+                .appDownloadre{
+                    border: none;
+                    margin: 5px;
+                }
+            }
+            
+        }
+        .bannerImages{
+            display: none;
+            width: 25rem;
+            height: 40rem;
+            position: absolute;
+            left: 5rem;
+            transform: translateY(-17%);
+
+            @media screen and (min-width:g.$lg) {
+                display: block;
+            }
+           
+            
+            
+        }
+
+        
+
+        
+    }
+
+
+
+   }
+
+
+    

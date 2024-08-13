@@ -7,6 +7,9 @@ import Footer from '../../Component/Footer/Footer';
 import RestrantCategory from '../../Component/RestrantCategory/RestrantCategory';
 import Loading from '../../Component/Loading/Loading';
 import Slider from '../../Component/RestrantSlider/Slider';
+import AppBanner from '../../Component/Banners/AppBanner';
+import SignInBanner from '../../Component/Banners/SignInBanner';
+import CitySection from '../../Component/CitySection/CitySection';
 
 interface PropsType{};
 

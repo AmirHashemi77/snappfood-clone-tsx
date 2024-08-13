@@ -1,0 +1,48 @@
+@use '/src/variable.scss' as g;
+
+
+
+.container{
+    @include g.flexCol;
+    align-items: flex-start;
+    border-top: 1px solid rgb(226, 226, 226);
+    padding: 10px 20px;
+
+   h5{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 0;
+   }
+
+   .cities{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3,auto);
+    gap: 7px;
+    margin: 20px 0;
+
+    width: 100%;
+
+
+    @media screen and (min-width:g.$sm) {
+        grid-template-columns: repeat(4,auto);
+    }
+    @media screen and (min-width:g.$lg) {
+        grid-template-columns: repeat(6,auto);
+    }
+    @media screen and (min-width:g.$xl) {
+        grid-template-columns: repeat(12,auto);
+    }
+
+
+    .city{
+        font-size: .7rem;
+        color: rgb(155, 155, 155);
+    }
+
+   }
+
+
+
+}
