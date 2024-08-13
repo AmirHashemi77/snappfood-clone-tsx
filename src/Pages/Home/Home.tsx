@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../../Store';
 import Footer from '../../Component/Footer/Footer';
 import RestrantCategory from '../../Component/RestrantCategory/RestrantCategory';
+import Loading from '../../Component/Loading/Loading';
 
 interface PropsType{};
 

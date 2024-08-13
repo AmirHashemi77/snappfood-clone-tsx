@@ -1,0 +1,108 @@
+@use '/src/variable.scss' as g;
+
+
+.container{
+    @include g.flexCol;
+    align-items: flex-start;
+    // overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin: 5rem 0;
+
+
+    .nextBtn , .prevBtn{
+        display: none;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 100%;
+        padding: 15px 18px;
+        border: none;
+        position: absolute;
+        top: 70%;
+        z-index: 10;
+        cursor: pointer;
+        box-shadow: rgba(58, 61, 66, 0.06) 0px 1px 0px, rgba(0, 0, 0, 0.2) 0px 4px 16px -8px;
+
+
+        @media screen and (min-width:g.$md) {
+            display: flex;
+        }
+    }
+    .nextBtn{
+        right: -8px
+    }
+    .prevBtn{
+        left: -8px
+    }
+
+        .titleAndLink{
+            @include g.flexRow;
+            width: 100%;
+            padding: 20px;
+
+            .title{
+                font-size: 1rem;
+                font-weight: bold;
+
+                @media screen and (min-width:g.$md) {
+                    font-size: 1.25rem;
+                }
+            }
+            .more{
+                @include g.flexRow;
+                font-size: 1rem;
+                font-weight: bold;
+                @media screen and (min-width:g.$md) {
+                    font-size: 1.25rem;
+                }
+                
+                
+                span{
+                    margin: 0 10px;
+                    color:#00B862;
+
+                }
+
+                   
+            }
+        }
+
+
+        .slider{
+            display: grid;
+            width: 100%;
+            grid-auto-flow: column;  
+            grid-auto-columns: 100%;         
+            grid-template-columns: repeat(1,100%);
+            gap: 20px;
+            align-items: center;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding: 20px;
+            
+
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            
+
+            @media screen and (min-width:g.$sm) {
+                grid-template-columns: repeat(2,calc(50% - 8px));
+                grid-auto-columns: calc(50% - 8px);         
+
+
+            }
+            @media screen and (min-width:g.$md) {
+                grid-template-columns: repeat(3,calc(33.33% - 10px));
+                grid-auto-columns: calc(33.33% - 10px);         
+
+            }
+            @media screen and (min-width:g.$lg) {
+                grid-template-columns: repeat(4,calc(25% - 10px));
+                grid-auto-columns: calc(25% - 10px);         
+
+            }
+           
+        }
+
+}
