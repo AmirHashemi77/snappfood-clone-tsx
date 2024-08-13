@@ -6,6 +6,7 @@ import { AppDispatch, RootState } from '../../Store';
 import { Link } from 'react-router-dom';
 import RestrantCard from './RestrantCard';
 import { RestrantModel } from '../../Models/RestrantModel';
+import { fetchSliderData } from '../../Store/Action/fetchsliderData';
 
 interface PropsType{
     tag:string;
@@ -27,7 +28,7 @@ const Slider:FC<PropsType> = ({tag,title}) => {
 
        
         useEffect(()=>{
-            // dipatch(fetchSliderData(setSliderItems,tag))
+            dipatch(fetchSliderData(setSliderItems,tag))
             
         },[dipatch,tag])
 

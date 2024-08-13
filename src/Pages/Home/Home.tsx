@@ -6,6 +6,7 @@ import { RootState } from '../../Store';
 import Footer from '../../Component/Footer/Footer';
 import RestrantCategory from '../../Component/RestrantCategory/RestrantCategory';
 import Loading from '../../Component/Loading/Loading';
+import Slider from '../../Component/RestrantSlider/Slider';
 
 interface PropsType{};
 
