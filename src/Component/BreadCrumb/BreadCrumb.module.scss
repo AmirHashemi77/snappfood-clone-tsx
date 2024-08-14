@@ -1,0 +1,18 @@
+@use '/src/variable.scss' as g;
+
+
+.container{
+    @include g.flexRow;
+    gap: 5px;
+    width: fit-content;
+    padding: 10px 20px;
+
+
+        .breadCrumbItem{
+            font-size: .7rem;
+            color: #888;
+        }
+        .lastBreadCrumbItem{
+            font-size: .7rem;
+        }
+}

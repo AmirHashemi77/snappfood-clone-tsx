@@ -6,7 +6,8 @@ import { AppDispatch, RootState } from '../../Store';
 import { Link } from 'react-router-dom';
 import RestrantCard from './RestrantCard';
 import { RestrantModel } from '../../Models/RestrantModel';
-import { fetchSliderData } from '../../Store/Action/fetchsliderData';
+import { fetchSliderData } from '../../Store/Action/fetchSliderData';
+
 
 interface PropsType{
     tag:string;
