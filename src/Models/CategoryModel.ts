@@ -15,3 +15,11 @@ export interface CategoryModel{
     title: string,
     subCategory:SubCategoryModel[] | null
 }
+
+
+
+export interface BreadCrumbModel{
+    id:string;
+    title:string;
+    link:string
+}

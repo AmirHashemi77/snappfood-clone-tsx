@@ -4,8 +4,8 @@ import { FoodItemModel, RestrantModel } from '../../../Models/RestrantModel';
 
 interface initialStateType{
     restrantListArr:RestrantModel[];
-    currentRestrant:RestrantModel | {};
-    currentFood:FoodItemModel | {}
+    currentRestrant:RestrantModel | null;
+    currentFood:FoodItemModel | null
 }
 
 
@@ -14,8 +14,8 @@ interface initialStateType{
 
 const initialState:initialStateType={
     restrantListArr:[],
-    currentRestrant:{},
-    currentFood:{}
+    currentRestrant:null,
+    currentFood:null
 
 
 }

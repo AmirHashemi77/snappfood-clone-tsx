@@ -1,4 +1,4 @@
-export const breadCrumbData:Array<{id:string;title:string}>=[
+export const breadCrumbData:{id:string;title:string}[]=[
     {
         id:'restrant',
         title:'رستوران'

@@ -1,4 +1,6 @@
-export const sideBarCategory={
+import { CategoryModel } from "../Models/CategoryModel";
+
+export const sideBarCategory:{restrant:CategoryModel[] ;cofe:CategoryModel[] ; bakery:CategoryModel[] }={
         restrant:[
             {
                 id:'fastfood',
