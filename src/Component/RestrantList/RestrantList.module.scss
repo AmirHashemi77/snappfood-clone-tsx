@@ -1,0 +1,17 @@
+@use '/src/variable.scss' as g;
+
+.container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1,auto);
+    gap: 25px;
+
+    @media screen and (min-width:g.$lg) {
+        grid-template-columns: repeat(2,1fr);
+        
+        
+    }
+    @media screen and (min-width:g.$xl) {
+        grid-template-columns: repeat(3,1fr);
+    }
+}

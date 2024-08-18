@@ -4,15 +4,20 @@ import { useParams } from 'react-router-dom';
 import { sideBarCategory } from '../../Helper/sideBarCategory';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-import { RestrantModel } from '../../Models/RestrantModel';
-import { CategoryModel } from '../../Models/CategoryModel';
-
+import { CategoryModel, SubCategoryModel } from '../../Models/CategoryModel';
+import SideBarItemWrapper from '../RestrantList/SideBarItemWrapper';
+import GroupingItem from './GroupingItem';
+ 
+type ParmasType={
+    category: "restrant" | "cofe" | "bakery";
+    subcategory:string
+}
 
 
 const RestrantListSideBar:FC = () => {
-    const params=useParams()
-    const [categoryData,setCategoryData]=useState([])
-    const [isSubCategoryMenu,setIsSubCategoryMenu]=useState(false)
+    const params=useParams<ParmasType>() 
+    const [categoryData,setCategoryData]=useState<(CategoryModel | SubCategoryModel)[]>([])
+    const [isSubCategoryMenu,setIsSubCategoryMenu]=useState<boolean>(false)
     const [groupTitle,setGroupTitle]=useState({
         title:'همه دسته بندی ها',
         link:`/service/${params.category}`
@@ -111,8 +116,8 @@ const RestrantListSideBar:FC = () => {
              
          <div className={style.container}>
              <NavLink to={groupTitle.link} end className={({isActive})=>isActive ? style.activeLink : style.unActiveLink}>{groupTitle.title}</NavLink>
-             {categoryData.map((item:CategoryModel)=>(
-                 <GroupingItem key={item.id} id={item.id} title={item.title} menuNum={item.menuNum} img={item.img} hasSubCategory={item.subCategory} category={params.category} subcategory={params.subcategory} />
+             {categoryData.map((item:CategoryModel | SubCategoryModel)=>(
+                 <GroupingItem key={item.id} id={item.id} title={item.title} menuNum={item.menuNum} img={item.img} hasSubCategory={'subCategory' in item &&  item.subCategory ?  item.subCategory : false } category={params.category} subcategory={params.subcategory} />
              ))}
  
              

@@ -1,0 +1,36 @@
+@use '/src/variable.scss' as g;
+
+.unActiveLink{
+    @include g.flexRow;
+    width: 100%;
+    padding: 8px 0px;
+    margin: 5px 0;
+    cursor: pointer;
+
+    
+}
+.activeLink{
+    @include g.flexRow;
+    width: 100%;
+    padding: 8px 0px;
+    margin: 5px 0;
+    cursor: pointer;
+    background-color:#F3F4F4;
+    border-radius: 10px;
+    font-size: .85rem;
+    color: #444;
+}
+.picAndName{
+    @include g.flexRow;
+    gap: 10px;
+     
+    img{
+       width: 2rem;
+       height: 2rem;
+    }
+
+    p{
+        font-size: .85rem;
+    }
+
+}
