@@ -11,6 +11,8 @@ import CategoryList from '../../Component/Header/CategoryList';
 import BreadCrumb from '../../Component/BreadCrumb/BreadCrumb';
 import Loading from '../../Component/Loading/Loading';
 import Footer from '../../Component/Footer/Footer';
+import RestrantSort from '../../Component/RestrantSortSection/RestrantSort';
+import RestrantCard from '../../Component/RestrantSlider/RestrantCard';
 
 interface PropsType{};
 
