@@ -1,0 +1,46 @@
+@use '/src/variable.scss' as g;
+
+
+.container{
+    @include g.flexRow;
+    border-bottom: 1px solid rgba(196, 195, 195, 0.112);
+    padding: 15px 10px;
+    
+    .title{
+        font-size: .9rem;
+        color: #555;
+    }
+    input[type=checkbox]{
+        position: relative;
+        cursor: pointer;
+        width: 50px;
+        height: 25px;
+        appearance: none;
+        background: rgba(228, 226, 226, 0.554);
+        border-radius: 20px;
+        transition: all .5s ;
+        
+        &::before{
+            content: '';
+            position: absolute;
+            top:0;
+            right: 0;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            transform: scale(.87);
+            background-color: #fff;
+            transition: all .5s ;
+
+        }
+        &:checked{
+            background-color: rgb(26, 181, 39)
+        }
+        &:checked::before{
+          right: 25px;
+        }
+    }
+
+    
+
+}

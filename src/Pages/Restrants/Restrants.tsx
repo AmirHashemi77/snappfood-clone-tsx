@@ -16,6 +16,7 @@ import RestrantCard from "../../Component/RestrantSlider/RestrantCard";
 import RestrantListSideBar from "../../Component/RestrantListSideBar/RestrantListSideBar";
 import RestrantList from "../../Component/RestrantList/RestrantList";
 import RestrantPriceFilter from "../../Component/RestrantPriceFilter/RestrantPriceFilter";
+import RestrantFilter from "../../Component/RestrantFilter/RestrantFilter";
 
 interface PropsType {}
 
