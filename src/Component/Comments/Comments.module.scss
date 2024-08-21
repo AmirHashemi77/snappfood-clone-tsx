@@ -1,0 +1,30 @@
+@use '/src/variable.scss' as g;
+
+
+.container{
+    @include g.flexCol;
+    width: 100%;
+    align-items: flex-start;
+    
+
+
+    .title{
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding: 20px;
+    }
+
+
+    .commentsWrapper{
+        @include g.flexCol;
+        align-items: flex-start;
+        width: 100%;
+        gap: 20px;
+
+
+        
+
+        
+    }
+
+}
