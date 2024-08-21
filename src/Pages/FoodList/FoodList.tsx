@@ -11,6 +11,9 @@ import Footer from '../../Component/Footer/Footer';
 import { fetchCurrentRestrant } from '../../Store/Action/currentRestrantAction';
 import { fetchCartData } from '../../Store/Action/fetchCartData';
 import SubmitAlert from '../../Component/SubmitAlert/SubmitAlert';
+import LogoAndMenu from '../../Component/LogoAndMenuFoodList/LogoAndMenu';
+import FoodListContainer from '../../Component/FoodList/FoodListContainer';
+import FoodPopup from '../../Component/FoodPopup/FoodPopup';
 
 
 
@@ -37,7 +40,7 @@ const FoodList:FC = () => {
         <>
           <Header/>
           {showSubmitAlert && <SubmitAlert/>}
-          {showFoodPopUp && <FoodPopUp/>}
+          {showFoodPopUp && <FoodPopup/>}
           {showRestrantPopUp && <RestrantPopUp/>}
           <div className={style.container}>
             {currentRestrant && currentRestrant.id ?

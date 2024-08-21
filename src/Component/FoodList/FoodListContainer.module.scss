@@ -1,0 +1,16 @@
+@use '/src/variable.scss' as g;
+
+
+
+
+.container{
+    background-color: #fff; 
+    box-shadow: 
+    2px 0 0 0 #EBEDF0, 
+    0 2px 0 0 #EBEDF0, 
+    2px 2px 0 0 #EBEDF0,   
+    2px 0 0 0 #EBEDF0 inset, 
+    0 2px 0 0 #EBEDF0 inset;
+    border-radius: 10px;
+    width: 100%;
+}

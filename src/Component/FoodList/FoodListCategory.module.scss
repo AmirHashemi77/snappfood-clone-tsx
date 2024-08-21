@@ -1,0 +1,34 @@
+@use '/src/variable.scss' as g;
+
+
+
+.container{
+    width: 100%;
+
+    .title{
+        padding: 10px;
+        text-align: center;
+        
+        
+            p{
+                font-size: .9rem;
+                color: #555;
+                font-weight: bold;
+            }
+    }
+    
+            
+
+            .foodList{
+            display: grid;
+            grid-template-columns: auto;
+
+
+
+            @media screen and (min-width:g.$lg) {
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+    
+}
