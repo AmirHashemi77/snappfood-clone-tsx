@@ -1,0 +1,79 @@
+@use '/src/variable.scss' as g;
+
+
+
+.container{
+    @include g.flexCol;
+    width: 100%;
+    gap: 30px;
+
+    .particular{
+        @include g.flexRow;
+        justify-content: flex-start;
+        gap: 30px;
+        width: 100%;
+
+        .logo{
+            width: 5rem;
+            height: 5rem;
+            border-radius: 10px;
+        }
+        .details{
+                @include g.flexCol;
+                align-items: flex-start;
+                gap: 10px;
+
+                .rate{
+                    display: flex;
+                    align-items: center;
+                    gap: 3px;
+                    .rateNum{
+                        font-size: .7rem;
+                        font-weight: bold;
+                        font-family: 'numberFont';
+                    }
+                    .commentNum{
+                        font-size: .7rem;
+                        color: gray;
+                        margin: 0 10px;
+                    }
+                }
+                .title{
+                    font-size: 1.15rem;
+                    color: #444;
+
+                }
+        }
+    }
+
+    .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 2px 7px -1px rgba(138,133,133,0.6);
+        cursor: pointer;
+        
+
+        &:hover span{
+            color: rgb(1, 141, 76);
+        }
+
+       
+
+        span{
+            color: rgb(0, 184, 98);
+            font-size: .9rem;
+            transition: all .4s;
+
+        }
+    }
+
+
+
+}

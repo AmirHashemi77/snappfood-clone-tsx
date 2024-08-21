@@ -1,0 +1,31 @@
+@use '/src/variable.scss' as g;
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    height: 10rem;
+    overflow-y: auto;
+
+    @media screen and (min-width:g.$md) {
+        height: fit-content;
+        align-items: flex-end;
+    }
+
+    .menuItem{
+        font-size: .9rem;
+        color: #555;
+        cursor: pointer;
+        padding: 0 10px;
+
+
+       &.active{
+            font-weight: bold;
+            color: #333;
+            border-left:2px solid #444 ;
+        }
+    }
+}
