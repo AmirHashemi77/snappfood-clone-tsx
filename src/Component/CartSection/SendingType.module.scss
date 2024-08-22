@@ -1,0 +1,36 @@
+@use '/src/variable.scss' as g;
+
+
+
+.container{
+    @include g.flexRow;
+    justify-content: flex-start;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 0px rgba(189,181,181,0.75);
+    border-radius: 10px;
+    font-size: .75rem;
+    gap: 10px;
+    width: 100%;
+    
+
+    .text{
+        @include g.flexRow;
+
+        .type{
+            margin: 0 3px;
+        }
+    
+        .price{    
+    
+            span{
+                font-weight: bold;
+                margin: 0 5px;
+                font-family: 'numberFont';
+            }
+        }
+    }
+
+
+   
+}

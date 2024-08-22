@@ -14,6 +14,7 @@ import SubmitAlert from '../../Component/SubmitAlert/SubmitAlert';
 import LogoAndMenu from '../../Component/LogoAndMenuFoodList/LogoAndMenu';
 import FoodListContainer from '../../Component/FoodList/FoodListContainer';
 import FoodPopup from '../../Component/FoodPopup/FoodPopup';
+import CartContainer from '../../Component/CartSection/CartContainer';
 
 
 

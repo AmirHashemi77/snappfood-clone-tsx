@@ -35,6 +35,16 @@ const cartSlice=createSlice({
         },
 
         addToCart(state,action:PayloadAction<CartItemModel>){
+          
+                state.items.push(action.payload);
+                state.totalPrice=state.totalPrice + action.payload.price;
+                state.totalQuantity++;
+                state.change=true
+
+            
+
+        },
+        plusHander(state,action:PayloadAction<{id:string}>){
             const availableItem=state.items.find((item)=>item.id===action.payload.id)
             if(availableItem){
                 availableItem.quantity++;
@@ -42,14 +52,7 @@ const cartSlice=createSlice({
                 state.totalPrice=state.totalPrice+availableItem.price;
                 state.totalQuantity++;
                 state.change=true
-            }else{
-                state.items.push(action.payload);
-                state.totalPrice=state.totalPrice + action.payload.price;
-                state.totalQuantity++;
-                state.change=true
-
             }
-
         },
         removeFromCart(state,action:PayloadAction<string>){
             const currentItem=state.items.find((item)=>item.id===action.payload)
