@@ -1,0 +1,85 @@
+@use '/src/variable.scss' as g;
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+
+        .header{
+            @include g.flexRow;
+            width: 100%;
+
+            .closeBtn{
+                background-color: #fff;
+                border: none;
+                cursor: pointer;
+            }
+            .logo{
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+
+        .title{
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            span{
+                font-weight: bold;
+                margin: 0 5px
+            }
+            
+        }
+        .inputContainer{
+            @include g.flexCol;
+            align-items: flex-start;
+            width: 100%;
+
+
+            p{
+                color: #777;
+                font-size: .6rem;
+                margin: 5px 0;
+            }
+
+            .phoneInput{
+                background-color: #fff;
+                width: 100%;
+                padding: 15px 10px;
+                border-radius: 10px;
+                border: 1.5px solid #6666 ;
+            }
+            small{
+                color: #7777;
+                font-size: .6rem;
+                margin: 5px 0;
+
+            }
+        }
+
+        .nextBtn{
+            border: none;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 15px 10px;
+            border-radius: 10px;
+            width: 100%;
+            background-color: g.$pinkColor;
+            color: white;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: all .4s ;
+
+            &:disabled{
+                background-color: #6663;
+                color: #5555;
+
+            }
+            
+        }
+}

@@ -1,0 +1,119 @@
+@use '/src/variable.scss' as g;
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+
+
+    .header{
+        @include g.flexRow;
+        width: 100%;
+        padding: 20px 0;
+
+
+        .backBtn{
+            background-color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .passwordTypeChanger{
+            background-color: #fff;
+            color: rgb(0, 184, 98);
+            border: none;
+            cursor: pointer;
+            font-size: .8rem;
+            font-weight: bold;
+        }
+    }
+
+
+    .title{
+        font-size: 1.2rem;
+        margin-bottom: 4rem;
+    }
+    .inputContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin: 10px 0;
+
+
+            p{
+                color: #777;
+                font-size: .7rem;
+                margin: 20px 0;
+            }
+            .passwordInput{
+                background-color: #fff;
+                width: 100%;
+                padding: 15px 10px;
+                border-radius: 10px;
+                border: 1.5px solid #6666 ;
+            }
+            small{
+                color: #7777;
+                font-size: .6rem;
+                margin: 10px 0;
+
+
+            }
+
+
+
+
+    }
+
+
+    .footer{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            margin: 10px 0;
+
+
+        .remmemberPassword{
+            background-color: #fff;
+            color: rgb(0, 184, 98);
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: .8rem;
+            align-self: flex-end;
+        }
+    
+        .LogInBtn{
+            
+                border: none;
+                font-size: 1rem;
+                font-weight: bold;
+                padding: 15px 10px;
+                border-radius: 10px;
+                width: 100%;
+                background-color: g.$pinkColor;
+                color: white;
+                margin: 20px 0;
+                cursor: pointer;
+                transition: all .4s ;
+    
+                &:disabled{
+                    background-color: #6663;
+                    color: #5555;
+    
+                
+                
+            }
+        }
+
+    }
+
+
+
+        
+}
