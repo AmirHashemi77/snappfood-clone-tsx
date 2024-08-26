@@ -8,9 +8,9 @@ import { authSliceAction } from '../../Store/Slice/authSlice/authSlice';
 import { UserDataObject } from '../../Models/AuthModel';
 
 
-interface PropsType{};
 
-const UserMenu:FC<PropsType> = () => {
+
+const UserMenu:FC = () => {
     const dispatch:AppDispatch=useDispatch();
     const userData=useSelector((state:RootState)=>state.auth.authedUserData) as UserDataObject
     const logOutUser=()=>{

@@ -10,9 +10,9 @@ import SendingType from './SendingType';
 import Cart from './Cart';
 import EmptyCart from './EmptyCart';
 
-interface PropsType{};
 
-const CartContainer:FC<PropsType> = () => {
+
+const CartContainer:FC= () => {
     const totalQuantity=useSelector((state:RootState)=>state.cart.totalQuantity)
     const parmas=useParams()
     const dispatch:AppDispatch=useDispatch()

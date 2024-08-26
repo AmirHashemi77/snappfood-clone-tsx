@@ -7,9 +7,9 @@ import { uiSliceAction } from '../../Store/Slice/uiSlice/uiSlice';
 import SearchInput from './SearchInput';
 import ResultSearch from './ResultSearch';
 
-interface PropsType{};
 
-const SearchWrapper:FC<PropsType> = () => {
+
+const SearchWrapper:FC = () => {
     const dispatch:AppDispatch=useDispatch();
     const isActiveInput=useSelector((state:RootState)=>state.ui.showSearchInput);
    

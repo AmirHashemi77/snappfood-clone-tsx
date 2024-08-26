@@ -11,9 +11,9 @@ import AppBanner from '../../Component/Banners/AppBanner';
 import SignInBanner from '../../Component/Banners/SignInBanner';
 import CitySection from '../../Component/CitySection/CitySection';
 
-interface PropsType{};
 
-const Home:FC<PropsType> = () => {
+
+const Home:FC = () => {
   const loading=useSelector((state:RootState)=>state.ui.showLoading);
     
   return (

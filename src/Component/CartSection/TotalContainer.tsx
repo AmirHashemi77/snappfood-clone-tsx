@@ -4,9 +4,9 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../../Store';
 import { RestrantModel } from '../../Models/RestrantModel';
 
-interface PropsType{};
 
-const TotalContainer:FC<PropsType> = () => {
+
+const TotalContainer:FC = () => {
     const totalPrice=useSelector((state:RootState)=>state.cart.totalPrice)
     const currentRestrant=useSelector((state:RootState)=>state.restrants.currentRestrant) as RestrantModel
     return (

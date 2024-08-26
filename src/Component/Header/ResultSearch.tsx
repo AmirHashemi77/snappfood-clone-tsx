@@ -6,9 +6,9 @@ import { AppDispatch, RootState } from '../../Store';
 import { searchSliceAction } from '../../Store/Slice/searchSlice/searchSlice';
 import { Link } from 'react-router-dom';
 
-interface PropsType{};
 
-const ResultSearch:FC<PropsType> = () => {
+
+const ResultSearch:FC = () => {
     const resultArr=useSelector((state:RootState)=>state.search.resultArr)
     const dispatch:AppDispatch=useDispatch()
     const closeSearch=()=>{

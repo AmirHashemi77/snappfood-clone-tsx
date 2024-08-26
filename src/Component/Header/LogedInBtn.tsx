@@ -6,9 +6,9 @@ import { RootState } from '../../Store';
 import { uiSliceAction } from '../../Store/Slice/uiSlice/uiSlice';
 import UserMenu from './UserMenu';
 
-interface PropsType{};
 
-const LogedInBtn:FC<PropsType> = () => {
+
+const LogedInBtn:FC = () => {
     const dispatch=useDispatch();
 
     const showUserMenu=useSelector((state:RootState)=>state.ui.showUserMenu)

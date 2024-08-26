@@ -4,9 +4,9 @@ import { useDispatch } from 'react-redux';
 import { fetchSearchResultAction } from '../../Store/Action/fetchSearchResultAction';
 import { AppDispatch } from '../../Store';
 
-interface PropsType{};
 
-const SearchInput:FC<PropsType> = () => {
+
+const SearchInput:FC = () => {
     const [timer,setTimer]=useState<ReturnType<typeof setTimeout>>()
     const dispatch:AppDispatch=useDispatch()
     const searchHandler=(e:ChangeEvent<HTMLInputElement>)=>{

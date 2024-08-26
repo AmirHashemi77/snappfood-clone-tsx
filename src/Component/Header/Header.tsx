@@ -9,9 +9,8 @@ import LogedInBtn from './LogedInBtn';
 import NotLogedInBtns from './NotLogedInBtns';
 import CategoryList from './CategoryList';
 
-interface PropsType{};
 
-const Header:FC<PropsType> = () => {
+const Header:FC = () => {
     const isAuthed=useSelector((state:RootState)=>state.auth.authed);
   
     const loc=useLocation();

@@ -2,9 +2,9 @@ import { FC, useEffect, useState } from 'react';
 import style from './RestrantSort.module.scss';
 import SortItem from './SortItem';
 
-interface PropsType{};
 
-const RestrantSort:FC<PropsType> = () => {
+
+const RestrantSort:FC = () => {
     const [activeMenu,setActiveMenu]=useState<boolean>(false);
     const [sortingValue,setSortingValue]=useState<string>('');
     const openHandler=()=>{

@@ -8,9 +8,9 @@ import { uiSliceAction } from '../../Store/Slice/uiSlice/uiSlice';
 import { deleteCartAction } from '../../Store/Action/postCartAction';
 import ButtonLoading from '../Loading/ButtonLoading';
 
-interface PropsType{};
 
-const CartButton:FC<PropsType> = () => {
+
+const CartButton:FC = () => {
     const authed=useSelector((state:RootState)=>state.auth.authed)
     const loading=useSelector((state:RootState)=>state.ui.showLoading)
     const dispatch:AppDispatch=useDispatch()

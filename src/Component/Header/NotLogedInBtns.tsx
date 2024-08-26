@@ -4,9 +4,9 @@ import { useDispatch } from 'react-redux';
 import { AppDispatch } from '../../Store';
 import { uiSliceAction } from '../../Store/Slice/uiSlice/uiSlice';
 
-interface PropsType{};
 
-const NotLogedInBtns:FC<PropsType> = () => {
+
+const NotLogedInBtns:FC = () => {
     const dispatch:AppDispatch=useDispatch()
     const showLoginPopUp=()=>{
         dispatch(uiSliceAction.popUpHandler('logIn'))

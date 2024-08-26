@@ -2,9 +2,9 @@ import { FC } from 'react';
 import style from './CategoryList.module.scss';
 import CategoryItem from './CategoryItem';
 
-interface PropsType{};
 
-const CategoryList:FC<PropsType> = () => {
+
+const CategoryList:FC = () => {
     return (
         <ul className={style.categoryList}>
                     <CategoryItem categoryName='restrant' title='رستوران'/>

@@ -1,9 +1,9 @@
 import { FC } from 'react';
 import style from './SignInBanner.module.scss';
 
-interface PropsType{};
 
-const SignInBanner:FC<PropsType> = () => {
+
+const SignInBanner:FC = () => {
     return (
         <div className={style.container}>
             <div className={style.banner}>

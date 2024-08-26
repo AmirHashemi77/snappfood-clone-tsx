@@ -6,9 +6,9 @@ import { useDispatch } from 'react-redux';
 import { uiSliceAction } from '../Store/Slice/uiSlice/uiSlice';
 import { RestrantModel } from '../Models/RestrantModel';
 
-interface PropsType{};
 
-const RestrantDetails:FC<PropsType> = () => {
+
+const RestrantDetails:FC = () => {
     const currentRestrant=useSelector((state:RootState)=>state.restrants.currentRestrant) as RestrantModel
     const dispatch:AppDispatch=useDispatch()
     const restrantPopUpHandler=()=>{

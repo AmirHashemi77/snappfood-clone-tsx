@@ -3,9 +3,9 @@ import SideBarItemWrapper from '../RestrantList/SideBarItemWrapper';
 import RestrantFilterItem from './RestrantFilterItem';
 
 
-interface PropsType{};
 
-const RestrantFilter:FC<PropsType> = () => {
+
+const RestrantFilter:FC = () => {
     return (
         <SideBarItemWrapper>
             <RestrantFilterItem title='دارای کپن'/>
